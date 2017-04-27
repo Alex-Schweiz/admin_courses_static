@@ -1,0 +1,35 @@
+{
+  "name": "admin_courses_static",
+  "version": "0.0.1",
+  "description": "Admin page for courses",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex_Schweiz/admin_courses_static.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "bootstrap",
+    "theme",
+    "responsive"
+  ],
+  "scripts": {
+    "postinstall": "gulp"
+  },
+  "license": "MIT",
+  "author": "Alex Skibinskiy",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-minify": "0.0.15",
+    "gulp-pug": "^3.2.0",
+    "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp-clean-css": "^3.0.4",
+    "jquery": "^3.2.1"
+  }
+}
