@@ -1,0 +1,109 @@
+extends layouts/main
+block content
+    .content-wrapper
+        section.content-header.row
+            .col-md-3
+                h1 Current single group
+            .col-md-2.col-md-offset-7
+                button.btn.btn-primary.edit-one(type='button', data-toggle='modal', data-target='#groupModal')
+                    a.white-link(href='#')
+                        i.fa.fa-pencil
+                        |  Edit a group
+                // Modal
+                #groupModal.modal.fade(role='dialog')
+                   .modal-dialog
+                       // Modal content
+                       .modal-content
+                           .modal-header
+                               button.close(type='button', data-dismiss='modal') ×
+                               h3.modal-title Edit Current Group
+                           .modal-body
+                               include includes/forms/group-form
+                           .modal-footer
+                               button.btn.btn-default(type='button', data-dismiss='modal') Close
+        section.content
+            .row
+                .col-md-6
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h4.box-title A1 Beginner
+                        .box-body
+                            h3 Adult beginner group
+                            table.table.table-bordered
+                                tr
+                                    td Start date
+                                    td 01/01/2017
+                                tr
+                                    td End Date
+                                    td 01/05/2017
+                                tr
+                                    td Average score
+                                    td 85.3
+                    // Line CHART
+                    .box.box-info
+                        .box-header.with-border
+                            h3.box-title Line Chart
+                            .box-tools.pull-right
+                                button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                    i.fa.fa-minus
+                        .box-body
+                            .chart
+                                p Chart is coming soon
+                                canvas#lineCharts(style='height:250px')
+                .col-md-6
+                    .box.box-widget.widget-user
+                        .widget-user-header.bg-primary
+                            a.white-link(href='teacher-single.html')
+                                h3.widget-user-username Elma Wild
+                            h5.widget-user-desc Junior English Teacher
+                        .widget-user-image
+                            img.img-circle(src='img/user1-128x128.jpg', alt='User Avatar')
+                        .box-footer
+                            .row
+                                .col-sm-4.border-right
+                                    .description-block
+                                        h5.description-header 2
+                                        span.description-text Groups
+                                .col-sm-4.border-right
+                                    .description-block
+                                        h5.description-header 25
+                                        span.description-text Students
+                                .col-sm-4
+                                    .description-block
+                                        h5.description-header 2
+                                        span.description-text Months working
+                    .box.box-primary
+                        .box-header.with-border
+                            h3.box-title Course students
+                            .box-tools.pull-right
+                                span.label.label-success 8 Students
+                                button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                    i.fa.fa-minus
+                        .box-body.no-padding
+                            ul.users-list.clearfix
+                                li
+                                    img(src='img/user1-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Alexander Pierce
+                                li
+                                    img(src='img/user8-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Norman
+                                li
+                                    img(src='img/user7-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Jane
+                                li
+                                    img(src='img/user6-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') John
+                                li
+                                    img(src='img/user2-160x160.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Alexander
+                                li
+                                    img(src='img/user5-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Sarah
+                                li
+                                    img(src='img/user4-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Nora
+                                li
+                                    img(src='img/user3-128x128.jpg', alt='User Image')
+                                    a.users-list-name(href='#') Nadia
+                        .box-footer.text-center
+                            a.uppercase View All Students

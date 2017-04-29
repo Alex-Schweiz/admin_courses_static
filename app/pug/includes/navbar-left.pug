@@ -12,14 +12,6 @@ aside.main-sidebar
                 a(href='#')
                     i.fa.fa-circle.text-success
                     |  Online
-        // search form (Optional)
-        form.sidebar-form(action='#', method='get')
-            .input-group
-                input.form-control(type='text', name='q', placeholder='Search...')
-                span.input-group-btn
-                    button#search-btn.btn.btn-flat(type='submit', name='search')
-                        i.fa.fa-search
-        // /.search form
         // Sidebar Menu
         ul.sidebar-menu
             li.header HEADER
@@ -28,6 +20,10 @@ aside.main-sidebar
                 a(href='index.html')
                     i.fa.fa-tachometer
                     span Dashboard
+            li
+                a(href='current-groups.html')
+                    i.fa.fa-graduation-cap
+                    span Current groups
             li
                 a(href='teachers.html')
                     i.fa.fa-users
@@ -51,5 +47,3 @@ aside.main-sidebar
                         a(href='#')
                             i.fa.fa-level-up
                             span English levels
-        // /.sidebar-menu
-    // /.sidebar

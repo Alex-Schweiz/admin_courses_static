@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "chart.js": "^2.5.0",
     "gulp-clean-css": "^3.0.4",
     "jquery": "^3.2.1"
   }

@@ -61,6 +61,6 @@ gulp.task('watch', function() {
     gulp.watch('app/pug/*', ['html']);
 });
 
-gulp.task('default', ['html','styles','images',
+gulp.task('default', ['html','styles',
     'moveBootstrapCSS','moveSkinsCSS',
     'moveJQuery','moveBootstrapJS','moveAppJS']);

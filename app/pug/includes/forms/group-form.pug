@@ -1,0 +1,25 @@
+form
+    h3 Personal info
+    .form-group
+        label(for='groupName') Name:
+        input#groupName.form-control(placeholder='Enter group name', name='groupName')
+    .form-group
+        label(for='groupType') Group Type:
+        select#groupType.form-control(name='groupType')
+            option Adult group
+            option Kinds group
+            option Intensive course
+            option Speaking club
+    .form-group
+        label(for='department') Department:
+        select#department.form-control(name='department')
+            option English Language
+            option German Language
+            option French Language
+    .form-group
+        label(for='startDate') Start Date:
+        input#startDate.form-control(data-inputmask="'alias': 'dd/mm/yyyy'", data-mask='', name='startDate', type='text')
+    .form-group
+        label(for='endDate') End Date:
+        input#endDate.form-control(data-inputmask="'alias': 'dd/mm/yyyy'", data-mask='', name='endDate', type='text')
+    button.btn.btn-success(type='submit', data-dismiss='modal') Submit
