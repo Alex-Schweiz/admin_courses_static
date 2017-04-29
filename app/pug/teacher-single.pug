@@ -1,0 +1,130 @@
+extends layouts/main
+block content
+    .content-wrapper
+        section.content-header.row
+            .col-md-3
+                h1 Single Teacher Page
+            .col-md-2.col-md-offset-7
+                button.btn.btn-primary.edit-one(type='button', data-toggle='modal', data-target='#myModal')
+                    a.white-link(href='#')
+                        i.fa.fa-pencil
+                        |  Edit teacher
+                // Modal
+                #myModal.modal.fade(role='dialog')
+                    .modal-dialog
+                        // Modal content
+                        .modal-content
+                            .modal-header
+                                button.close(type='button', data-dismiss='modal') ×
+                                h3.modal-title Edit Nina Mcintire info
+                            .modal-body
+                                include includes/teacher-form
+                            .modal-footer
+                                button.btn.btn-default(type='button', data-dismiss='modal') Close
+        section.content
+            .row
+                .col-md-4
+                    .box.box-solid.box-primary
+                        .box-body.box-profile
+                            img.profile-user-img.img-responsive.img-circle(src='img/user1-128x128.jpg', alt='User profile picture')
+                            h3.profile-username.text-center Nina Mcintire
+                            p.text-muted.text-center Software Engineer
+                            ul.list-group.list-group-unbordered
+                                li.list-group-item
+                                    b Groups
+                                    a.pull-right 2
+                                li.list-group-item
+                                    b Students
+                                    a.pull-right 25
+                                li.list-group-item
+                                    b Months working
+                                    a.pull-right 2
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Skills and interests
+                        .box-body
+                            p
+                                span.label.label-danger UI Design
+                                span.label.label-success Coding
+                                span.label.label-info Javascript
+                                span.label.label-warning PHP
+                                span.label.label-primary Node.js
+                .col-md-4
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Personal info
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    td Name
+                                    td Alicia Keys
+                                tr
+                                    td Date of birth
+                                    td 21/03/1992
+                                tr
+                                    td Gender
+                                    td Female
+                                tr
+                                    td Email
+                                    td sdasdad@mail.com
+                                tr
+                                    td Phone
+                                    td +38-095-24-24
+                                tr
+                                    td Address
+                                    td 21 Down Street, London
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Professional info
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    td Personal ID
+                                    td 001
+                                tr
+                                    td Department
+                                    td Teachers
+                                tr
+                                    td Designation
+                                    td Junior English teacher
+                                tr
+                                    td Date of joining
+                                    td 15/01/2017
+                                tr
+                                    td Salary
+                                    td $150
+                .col-md-4
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Current groups
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    th Group id
+                                    th Name
+                                    th Start date
+                                    th Finish date
+                                tr
+                                    td 001
+                                    td A1 Beginner
+                                    td 01/01/2017
+                                    td 01/05/2017
+                                tr
+                                    td 002
+                                    td A2 Intensive
+                                    td 01/02/2017
+                                    td 01/06/2017
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Awards
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    th Name
+                                    th Prise
+                                tr
+                                    td Teacher of the month 04/2017
+                                    td $50
+                                tr
+                                    td Famous person
+                                    td $40

@@ -1,0 +1,38 @@
+form
+    h3 Personal info
+    .form-group
+        label(for='name') Name:
+        input#name.form-control(placeholder='Enter name', name='name')
+    .form-group
+        label(for='dateOfBirth') Date of Birth:
+        input#dateOfBirth.form-control(data-inputmask="'alias': 'dd/mm/yyyy'", data-mask='', name='dateOfBirth', type='text')
+    .form-group
+        label(for='gender') Gender:
+        select#gender.form-control(name='gender')
+            option Female
+            option Male
+    .form-group
+        label(for='email') Email:
+        input#email.form-control(placeholder='Enter email', name='email', type='email')
+    .form-group
+        label(for='phone') Phone:
+        input#phone.form-control(placeholder='Enter phone', name='phone')
+    .form-group
+        label(for='address') Address:
+        input#address.form-control(placeholder='Enter address', name='address')
+    h3 Professional info
+    .form-group
+        label(for='department') Department:
+        select#department.form-control(name='department')
+            option English Language
+            option German Language
+            option French Language
+    .form-group
+        label(for='designation') Designation:
+        input#designation.form-control(placeholder='Enter designation', name='designation')
+    .form-group
+        label(for='dateOfJoining') Date of joining:
+        input#dateOfJoining.form-control(name='dateOfJoining')
+        label(for='salary') Salary:
+        input#salary.form-control(placeholder='Enter salary', name='salary')
+    button.btn.btn-success(type='submit', data-dismiss='modal') Submit
