@@ -1,4 +1,10 @@
 html
     include ../includes/head
-    body
-        block content
+    body.hold-transition.skin-blue.sidebar-mini
+            .wrapper
+                include ../includes/main-header
+                include ../includes/navbar-left
+                block content
+                include ../includes/footer
+                include ../includes/control-sidebar
+                include ../includes/js-scripts
