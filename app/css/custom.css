@@ -13,3 +13,8 @@
 .box-body p span {
     margin-right: 10px;
 }
+
+.login-page {
+    background: url(https://i.ytimg.com/vi/iTBfKfLfmyw/maxresdefault.jpg) no-repeat;
+    background-size: cover;
+}

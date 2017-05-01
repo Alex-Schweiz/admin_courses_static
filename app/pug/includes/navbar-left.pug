@@ -29,9 +29,24 @@ aside.main-sidebar
                     i.fa.fa-users
                     span Teachers
             li
+                a(href='login.html')
+                    i.fa.fa-user
+                    span Login page
+            li.treeview
                 a(href='#')
                     i.fa.fa-money
                     span Payments
+                    span.pull-right-container
+                        i.fa.fa-angle-left.pull-right
+                ul.treeview-menu
+                    li
+                        a(href='payments-incoming.html')
+                            i.fa.fa-arrow-down
+                            span Incoming
+                    li
+                        a(href='payments-outgoing.html')
+                            i.fa.fa-arrow-up
+                            span Outgoing
             li.treeview
                 a(href='#')
                     i.fa.fa-book

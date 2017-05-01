@@ -1,0 +1,128 @@
+extends layouts/main
+block content
+    .content-wrapper
+        section.content-header
+            h1 Incoming Payments
+        section.content
+            .row
+                .col-md-7
+                    .box.box-solid.box-primary
+                        .box-header
+                            h3.box-title Payments by student
+                        .box-body
+                            table#example1.table.table-bordered.table-striped
+                                thead
+                                    tr
+                                        th Payment id
+                                        th Name
+                                        th Group
+                                        th Amount
+                                        th Date
+                                tbody
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 500
+                                        td 12/04/2017
+                                tfoot
+                                    tr
+                                        th Payment id
+                                        th Name
+                                        th Group
+                                        th Amount
+                                        th Date
+
+                .col-md-5
+                    .box.box-solid.box-primary
+                        .box-header.with-border
+                            h3.box-title Payments by group
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    th(style='width: 10px') #
+                                    th Name
+                                    th Progress
+                                    th(style='width: 40px') Status
+                                tr
+                                    td 15.
+                                    td A1 Adults Beginner
+                                    td
+                                        .progress.progress-xs
+                                            .progress-bar.progress-bar-danger(style='width: 55%')
+                                    td
+                                        span.badge.bg-red 55%
+                                tr
+                                    td 85.
+                                    td A2 Intensive group
+                                    td
+                                        .progress.progress-xs
+                                            .progress-bar.progress-bar-yellow(style='width: 70%')
+                                    td
+                                        span.badge.bg-yellow 70%
+                                tr
+                                    td 81.
+                                    td A2 Speaking club
+                                    td
+                                        .progress.progress-xs.progress-striped.active
+                                            .progress-bar.progress-bar-primary(style='width: 30%')
+                                    td
+                                        span.badge.bg-light-blue 30%
+                                tr
+                                    td 94.
+                                    td A1 Kinds
+                                    td
+                                        .progress.progress-xs.progress-striped.active
+                                            .progress-bar.progress-bar-success(style='width: 90%')
+                                    td
+                                        span.badge.bg-green 90%
+                        .box-footer.clearfix
+
+    script.
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false
+            });
+        });
