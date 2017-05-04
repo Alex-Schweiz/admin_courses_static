@@ -1,0 +1,40 @@
+extends layouts/main
+block content
+    .content-wrapper
+        section.content-header.row
+            .col-md-3
+                h1 Groups of English
+            .col-md-2.col-md-offset-7
+                a.btn.btn-primary.add-new.white-link(href='teacher-add-new.html')
+                    i.fa.fa-plus
+                    |  Add new group
+        section.content
+            .row
+                .col-md-3.col-sm-6.col-xs-12
+                    a(href='knowledge-group-single.html')
+                        .info-box
+                            span.info-box-icon.bg-blue
+                                p A1
+                            .info-box-content
+                                span.info-box-text Kids Beginner
+                .col-md-3.col-sm-6.col-xs-12
+                    a(href='knowledge-group-single.html')
+                        .info-box
+                            span.info-box-icon.bg-blue
+                                p A1
+                            .info-box-content
+                                span.info-box-text Adult Beginner
+                .col-md-3.col-sm-6.col-xs-12
+                    a(href='knowledge-group-single.html')
+                        .info-box
+                            span.info-box-icon.bg-blue
+                                p A2
+                            .info-box-content
+                                span.info-box-text Intensive
+                .col-md-3.col-sm-6.col-xs-12
+                    a(href='knowledge-group-single.html')
+                        .info-box
+                            span.info-box-icon.bg-blue
+                                p B1
+                            .info-box-content
+                                span.info-box-text Speaking club
