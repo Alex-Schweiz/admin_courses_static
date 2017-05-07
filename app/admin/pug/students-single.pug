@@ -1,0 +1,211 @@
+extends layouts/main
+block content
+    .content-wrapper
+        section.content-header.row
+            .col-md-3
+                h3 Single Student Page
+            .col-md-2.col-md-offset-7
+                button.btn.btn-primary.edit-one(type='button', data-toggle='modal', data-target='#myModal')
+                    a.white-link(href='#')
+                        i.fa.fa-pencil
+                        |  Edit student
+        section.content
+            .row
+                .col-md-3
+                    // Profile Image
+                    .box.box-primary
+                        .box-body.box-profile
+                            img.profile-user-img.img-responsive.img-circle(src='img/user4-128x128.jpg', alt='User profile picture')
+                            h3.profile-username.text-center Nina Mcintire
+                            p.text-muted.text-center A1 Kids group
+                            ul.list-group.list-group-unbordered
+                                li.list-group-item
+                                    b Followers
+                                    a.pull-right 12
+                    .box.box-primary
+                        .box-header.with-border
+                            h3.box-title About Me
+                        .box-body
+                            table.table.table-bordered
+                                tr
+                                    td Date of birth
+                                    td 21/03/1992
+                                tr
+                                    td Gender
+                                    td Female
+                                tr
+                                    td Email
+                                    td sdasdad@mail.com
+                                tr
+                                    td Phone
+                                    td +38-095-24-24
+                                tr
+                                    td Address
+                                    td 21 Down Street, London
+                            hr
+                            strong
+                                i.fa.fa-file-text-o.margin-r-5
+                                |  Notes
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.
+                .col-md-9
+                    .nav-tabs-custom
+                        ul.nav.nav-tabs
+                            li.active
+                                a(href='#timeline', data-toggle='tab') Timeline
+                            li
+                                a(href='#homework', data-toggle='tab') Homework
+                            li
+                                a(href='#progress', data-toggle='tab') Progress
+                        .tab-content
+                            #timeline.active.tab-pane
+                                ul.timeline.timeline-inverse
+                                    li.time-label
+                                        span.bg-red
+                                            | 10 Feb. 2014
+                                    li
+                                        i.fa.fa-user.bg-aqua
+                                        .timeline-item
+                                            span.time
+                                                i.fa.fa-clock-o
+                                                |  5 mins ago
+                                            h3.timeline-header.no-border
+                                                a(href='#') A1 Kids group
+                                                |  Got 80/100 for control work
+                                    // END timeline item
+                                    // timeline item
+                                    li
+                                        i.fa.fa-comments.bg-yellow
+                                        .timeline-item
+                                            span.time
+                                                i.fa.fa-clock-o
+                                                |  27 mins ago
+                                            h3.timeline-header
+                                                a(href='#') A1 Kids group
+                                                |  New homework
+                                            .timeline-body
+                                                p LP p.12 ex.14, SB p.20 ex.18
+                                                p Prepare words from 1st module
+                                    // END timeline item
+                                    // timeline time label
+                                    li.time-label
+                                        span.bg-green
+                                            | 3 Jan. 2014
+                                    // /.timeline-label
+                                    // timeline item
+                                    li
+                                        i.fa.fa-comments.bg-yellow
+                                        .timeline-item
+                                            span.time
+                                                i.fa.fa-clock-o
+                                                |  27 mins ago
+                                            h3.timeline-header
+                                                a(href='#') A1 Kids group
+                                                |  New homework
+                                            .timeline-body
+                                                p LP p.12 ex.14, SB p.20 ex.18
+                                                p Prepare words from 1st module
+                                    // END timeline item
+                                    li
+                                        i.fa.fa-clock-o.bg-gray
+                            // /.tab-pane
+                            #homework.tab-pane
+                                .box
+                                    .box-header
+                                        .box-tools.pull-right
+                                            ul.pagination.pagination-sm.inline
+                                                li
+                                                    a(href='#') «
+                                                li
+                                                    a(href='#') 1
+                                                li
+                                                    a(href='#') 2
+                                                li
+                                                    a(href='#') 3
+                                                li
+                                                    a(href='#') »
+                                    // /.box-header
+                                    .box-body
+                                        ul.todo-list
+                                            li
+                                                // drag handle
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                // checkbox
+                                                input(type='checkbox', value='')
+                                                // todo text
+                                                span.text Design a nice theme
+                                                // Emphasis label
+                                                small.label.label-danger
+                                                    i.fa.fa-clock-o
+                                                    |  2 mins
+                                                // General tools such as edit or delete
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                            li
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                input(type='checkbox', value='')
+                                                span.text Make the theme responsive
+                                                small.label.label-info
+                                                    i.fa.fa-clock-o
+                                                    |  4 hours
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                            li
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                input(type='checkbox', value='')
+                                                span.text Let theme shine like a star
+                                                small.label.label-warning
+                                                    i.fa.fa-clock-o
+                                                    |  1 day
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                            li
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                input(type='checkbox', value='')
+                                                span.text Let theme shine like a star
+                                                small.label.label-success
+                                                    i.fa.fa-clock-o
+                                                    |  3 days
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                            li
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                input(type='checkbox', value='')
+                                                span.text Check your messages and notifications
+                                                small.label.label-primary
+                                                    i.fa.fa-clock-o
+                                                    |  1 week
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                            li
+                                                span.handle
+                                                    i.fa.fa-ellipsis-v
+                                                    i.fa.fa-ellipsis-v
+                                                input(type='checkbox', value='')
+                                                span.text Let theme shine like a star
+                                                small.label.label-default
+                                                    i.fa.fa-clock-o
+                                                    |  1 month
+                                                .tools
+                                                    i.fa.fa-edit
+                                                    i.fa.fa-trash-o
+                                    // /.box-body
+                                    .box-footer.clearfix.no-border
+                                        button.btn.btn-default.pull-right(type='button')
+                                            i.fa.fa-plus
+                                            |  Add item

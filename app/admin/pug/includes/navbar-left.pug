@@ -20,14 +20,34 @@ aside.main-sidebar
                 a(href='index.html')
                     i.fa.fa-tachometer
                     span Dashboard
-            li
-                a(href='current-groups.html')
-                    i.fa.fa-graduation-cap
-                    span Current groups
+            li.treeview
+                a(href='#')
+                    i.fa.fa-money
+                    span Groups
+                    span.pull-right-container
+                        i.fa.fa-angle-left.pull-right
+                ul.treeview-menu
+                    li
+                        a(href='current-groups.html')
+                            i.fa.fa-graduation-cap
+                            span Current groups
+                    li
+                        a(href='archived-groups.html')
+                            i.fa.fa-archive
+                            span Archived groups
+
             li
                 a(href='teachers.html')
                     i.fa.fa-users
                     span Teachers
+            li
+                a(href='students.html')
+                    i.fa.fa-graduation-cap
+                    span Students
+            li
+                a(href='awards.html')
+                    i.fa.fa-trophy
+                    span Awards
             li
                 a(href='login.html')
                     i.fa.fa-user

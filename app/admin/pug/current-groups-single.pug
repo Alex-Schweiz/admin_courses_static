@@ -3,7 +3,7 @@ block content
     .content-wrapper
         section.content-header.row
             .col-md-3
-                h1 Current single group
+                h3 Current single group
             .col-md-2.col-md-offset-7
                 button.btn.btn-primary.edit-one(type='button', data-toggle='modal', data-target='#groupModal')
                     a.white-link(href='#')
@@ -23,7 +23,7 @@ block content
                                button.btn.btn-default(type='button', data-dismiss='modal') Close
         section.content
             .row
-                .col-md-6
+                .col-md-4
                     .box.box-solid.box-primary
                         .box-header.with-border
                             h4.box-title A1 Beginner
@@ -39,18 +39,7 @@ block content
                                 tr
                                     td Average score
                                     td 85.3
-                    // Line CHART
-                    .box.box-info
-                        .box-header.with-border
-                            h3.box-title Line Chart
-                            .box-tools.pull-right
-                                button.btn.btn-box-tool(type='button', data-widget='collapse')
-                                    i.fa.fa-minus
-                        .box-body
-                            .chart
-                                p Chart is coming soon
-                                canvas#lineCharts(style='height:250px')
-                .col-md-6
+                    h2 Group teacher
                     .box.box-widget.widget-user
                         .widget-user-header.bg-primary
                             a.white-link(href='teacher-single.html')
@@ -72,38 +61,177 @@ block content
                                     .description-block
                                         h5.description-header 2
                                         span.description-text Months working
-                    .box.box-primary
-                        .box-header.with-border
-                            h3.box-title Course students
-                            .box-tools.pull-right
-                                span.label.label-success 8 Students
-                                button.btn.btn-box-tool(type='button', data-widget='collapse')
-                                    i.fa.fa-minus
-                        .box-body.no-padding
-                            ul.users-list.clearfix
-                                li
-                                    img(src='img/user1-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Alexander Pierce
-                                li
-                                    img(src='img/user8-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Norman
-                                li
-                                    img(src='img/user7-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Jane
-                                li
-                                    img(src='img/user6-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') John
-                                li
-                                    img(src='img/user2-160x160.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Alexander
-                                li
-                                    img(src='img/user5-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Sarah
-                                li
-                                    img(src='img/user4-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Nora
-                                li
-                                    img(src='img/user3-128x128.jpg', alt='User Image')
-                                    a.users-list-name(href='#') Nadia
-                        .box-footer.text-center
-                            a.uppercase View All Students
+                .col-md-8
+                    .nav-tabs-custom
+                        ul.nav.nav-tabs
+                            li.active
+                                a(href='#progress', data-toggle='tab') Progress
+                            li
+                                a(href='#students', data-toggle='tab') Students
+                            li
+                                a(href='#homework', data-toggle='tab') Homework
+                            li
+                                a(href='#classroom-tasks', data-toggle='tab') Classroom Tasks
+                            li
+                                a(href='#results-table', data-toggle='tab') Results table
+                        .tab-content
+                            #progress.active.tab-pane
+                                .box.box-info
+                                    .box-header.with-border
+                                        h3.box-title Line Chart
+                                        .box-tools.pull-right
+                                            button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                                i.fa.fa-minus
+                                    .box-body
+                                        .chart
+                                            p Chart is coming soon
+                                            canvas#lineCharts(style='height:250px')
+                            #students.tab-pane
+                                .box.box-primary
+                                    .box-header.with-border
+                                        h3.box-title Course students
+                                        .box-tools.pull-right
+                                            span.label.label-success 8 Students
+                                            button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                                i.fa.fa-minus
+                                    .box-body.no-padding
+                                        ul.users-list.clearfix
+                                            li
+                                                img(src='img/user1-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Alexander Pierce
+                                            li
+                                                img(src='img/user8-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Norman
+                                            li
+                                                img(src='img/user7-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Jane
+                                            li
+                                                img(src='img/user6-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') John
+                                            li
+                                                img(src='img/user2-160x160.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Alexander
+                                            li
+                                                img(src='img/user5-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Sarah
+                                            li
+                                                img(src='img/user4-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Nora
+                                            li
+                                                img(src='img/user3-128x128.jpg', alt='User Image')
+                                                a.users-list-name(href='#') Nadia
+                                    .box-footer.text-center
+                                        a.uppercase View All Students
+                            #homework.tab-pane
+                                table.table.table-bordered
+                                    tr
+                                        th #
+                                        th Date
+                                        th Task
+                                    tr
+                                        td 1
+                                        td 20/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 2
+                                        td 21/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 3
+                                        td 22/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 4
+                                        td 23/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 5
+                                        td 24/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 6
+                                        td 29/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    tr
+                                        td 7
+                                        td 02/02
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            #classroom-tasks.tab-pane
+                                table.table.table-bordered
+                                    tr
+                                        th #
+                                        th Date
+                                        th Task
+                                    tr
+                                        td 1
+                                        td 20/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 2
+                                        td 21/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 3
+                                        td 22/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 4
+                                        td 23/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 5
+                                        td 24/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 6
+                                        td 29/01
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    tr
+                                        td 7
+                                        td 02/02
+                                        td Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            #results-table.tab-pane
+                                table.table.table-striped
+                                    tr
+                                        th Name
+                                        th 1
+                                        th 2
+                                        th 3
+                                        th 4
+                                        th 5
+                                        th 6
+                                        th 7
+                                        th 8
+                                        th 9
+                                        th 10
+                                        th Exam
+                                        th AVG
+                                    tr
+                                        td Eddie Murphy
+                                        td 70
+                                        td 75
+                                        td 35
+                                        td 15
+                                        td 15
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 73.8
+                                    tr
+                                        td Eddie Murphy
+                                        td 70
+                                        td 75
+                                        td 35
+                                        td 15
+                                        td 15
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 80
+                                        td 73.8
+
