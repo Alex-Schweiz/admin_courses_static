@@ -5,81 +5,20 @@ block content
             h1 Incoming Payments
         section.content
             .row
-                .col-md-7
-                    .box.box-solid.box-primary
-                        .box-header
-                            h3.box-title Payments by student
-                        .box-body
-                            table#example1.table.table-bordered.table-striped
-                                thead
-                                    tr
-                                        th Payment id
-                                        th Name
-                                        th Group
-                                        th Amount
-                                        th Date
-                                tbody
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                    tr
-                                        td 154
-                                        td Alex
-                                        td A2 Beginner
-                                        td 500
-                                        td 12/04/2017
-                                tfoot
-                                    tr
-                                        th Payment id
-                                        th Name
-                                        th Group
-                                        th Amount
-                                        th Date
-
-                .col-md-5
+                .col-md-12
                     .box.box-solid.box-primary
                         .box-header.with-border
                             h3.box-title Payments by group
+                            .box-tools.pull-right
+                                button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                    i.fa.fa-minus
                         .box-body
                             table.table.table-bordered
                                 tr
-                                    th(style='width: 10px') #
+                                    th #
                                     th Name
-                                    th Progress
-                                    th(style='width: 40px') Status
+                                    th(style='width: 60%') Progress
+                                    th Status
                                 tr
                                     td 15.
                                     td A1 Adults Beginner
@@ -113,16 +52,63 @@ block content
                                     td
                                         span.badge.bg-green 90%
                         .box-footer.clearfix
+                .col-md-12
+                    .box.box-solid.box-primary
+                        .box-header
+                            h3.box-title Payments by student
+                            .box-tools.pull-right
+                                button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                    i.fa.fa-minus
+                        .box-body
+                            table#incoming_payments_by_student.table.table-bordered.table-striped
+                                thead
+                                    tr
+                                        th Payment id
+                                        th Name
+                                        th Group
+                                        th Amount
+                                        th Date
+                                tbody
+                                    tr
+                                        td 154
+                                        td Ben
+                                        td A2 Beginner
+                                        td 200
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 600
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td John
+                                        td A1 Beginner
+                                        td 300
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 120
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 187
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 39
+                                        td 12/04/2017
+                                    tr
+                                        td 154
+                                        td Alex
+                                        td A2 Beginner
+                                        td 39
+                                        td 12/04/2017
 
-    script.
-        $(function () {
-            $("#example1").DataTable();
-            $('#example2').DataTable({
-                "paging": true,
-                "lengthChange": false,
-                "searching": false,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false
-            });
-        });

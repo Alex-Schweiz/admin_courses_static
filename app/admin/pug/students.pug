@@ -12,36 +12,49 @@ block content
                     a(href='#') Examples
                 li.active User profile
         section.content
-            .row
-                .col-md-3
-                    .box.box-widget.widget-user-2
-                        .widget-user-header.bg-blue
-                            .widget-user-image
-                                img.img-circle(src='img/user1-128x128.jpg', alt='User Avatar')
-                            a.white-link(href='students-single.html')
-                                h3.widget-user-username Nadia Carmichael
-                            h5.widget-user-desc A1 Adult group
-                .col-md-3
-                    .box.box-widget.widget-user-2
-                        .widget-user-header.bg-blue
-                            .widget-user-image
-                                img.img-circle(src='img/user5-128x128.jpg', alt='User Avatar')
-                            a.white-link(href='students-single.html')
-                                h3.widget-user-username Nadia Carmichael
-                            h5.widget-user-desc B1 Speaking club
-                .col-md-3
-                    .box.box-widget.widget-user-2
-                        .widget-user-header.bg-blue
-                            .widget-user-image
-                                img.img-circle(src='img/user3-128x128.jpg', alt='User Avatar')
-                            a.white-link(href='students-single.html')
-                                h3.widget-user-username Nadia Carmichael
-                            h5.widget-user-desc A2 Kids Group
-                .col-md-3
-                    .box.box-widget.widget-user-2
-                        .widget-user-header.bg-blue
-                            .widget-user-image
-                                img.img-circle(src='img/user4-128x128.jpg', alt='User Avatar')
-                            a.white-link(href='students-single.html')
-                                h3.widget-user-username Nadia Carmichael
-                            h5.widget-user-desc A1 Kids Group
+            .col-md-12
+                .box.box-solid.box-primary
+                    .box-header
+                        h3.box-title Students list
+                    .box-body
+                        table#students_list.table.table-bordered.table-striped
+                            thead
+                                tr
+                                    th Student id
+                                    th Name
+                                    th Group
+                                    th Department
+                                    th Date of join
+                            tbody
+                                tr
+                                    td 2
+                                    td
+                                        a(href='students-single.html')
+                                            p Nadia Carmichael
+                                    td A2 Beginner
+                                    td English
+                                    td 12/04/2017
+                                tr
+                                    td 3
+                                    td
+                                        a(href='students-single.html')
+                                            p Gabriella Mziri
+                                    td A2 Beginner
+                                    td German
+                                    td 12/04/2017
+                                tr
+                                    td 4
+                                    td
+                                        a(href='students-single.html')
+                                            p Bob Rocks
+                                    td A1 Beginner
+                                    td French
+                                    td 12/04/2017
+                                tr
+                                    td 5
+                                    td
+                                        a(href='students-single.html')
+                                            p Ajshvarija ray
+                                    td A2 Beginner
+                                    td English
+                                    td 12/04/2017
