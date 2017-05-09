@@ -52,13 +52,23 @@ block content
                     .nav-tabs-custom
                         ul.nav.nav-tabs
                             li.active
+                                a(href='#progress', data-toggle='tab') Progress
+                            li
                                 a(href='#timeline', data-toggle='tab') Timeline
                             li
                                 a(href='#homework', data-toggle='tab') Homework
-                            li
-                                a(href='#progress', data-toggle='tab') Progress
                         .tab-content
-                            #timeline.active.tab-pane
+                            #progress.active.tab-pane
+                                .box.box-info
+                                    .box-header.with-border
+                                        h3.box-title Line Chart
+                                        .box-tools.pull-right
+                                            button.btn.btn-box-tool(type='button', data-widget='collapse')
+                                                i.fa.fa-minus
+                                    .box-body
+                                        .chart
+                                            canvas#lineChart(style='height:350px')
+                            #timeline.tab-pane
                                 ul.timeline.timeline-inverse
                                     li.time-label
                                         span.bg-red
@@ -209,3 +219,4 @@ block content
                                         button.btn.btn-default.pull-right(type='button')
                                             i.fa.fa-plus
                                             |  Add item
+
